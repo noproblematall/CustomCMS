@@ -125,17 +125,7 @@ class DataEdit extends Controller
                 unset($database_data['id'],$database_data['user_id'],$database_data['created_at'],$database_data['updated_at']);
                 if(!$this->containsOnlyNull($database_data)){
                     $isisan->update($data);
-                    // $event = EditEvent::where('id',4)->first();
-                    // $event_name = $event->event_name;
-                    // $event_type = $event->event_type;
-                    // $event_name = str_replace('uuu',$user_name,$event_name);
-                    // $event_name = str_replace('ttt',$table_name,$event_name);
-                    // EventHistory::create([
-                    //     'user_id' => $user_id,
-                    //     'history_name' => $event_name,
-                    //     'history_type' => $event_type
-                    // ]);
-                    // return $event_name;
+                    
                 }
             }
         }else{
